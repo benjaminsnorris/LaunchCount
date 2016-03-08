@@ -10,6 +10,8 @@
 		703C2CA51C8F40D10033C405 /* LaunchCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 703C2CA41C8F40D10033C405 /* LaunchCount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		703C2CAC1C8F40D10033C405 /* LaunchCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703C2CA11C8F40D10033C405 /* LaunchCount.framework */; };
 		703C2CB11C8F40D10033C405 /* LaunchCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */; };
+		703C2CBC1C8F41210033C405 /* LaunchCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CBB1C8F41210033C405 /* LaunchCountService.swift */; };
+		703C2CBE1C8F41320033C405 /* VersionNumberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CBD1C8F41320033C405 /* VersionNumberService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		703C2CAB1C8F40D10033C405 /* LaunchCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCountTests.swift; sourceTree = "<group>"; };
 		703C2CB21C8F40D10033C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		703C2CBB1C8F41210033C405 /* LaunchCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCountService.swift; sourceTree = "<group>"; };
+		703C2CBD1C8F41320033C405 /* VersionNumberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionNumberService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				703C2CA41C8F40D10033C405 /* LaunchCount.h */,
+				703C2CBB1C8F41210033C405 /* LaunchCountService.swift */,
+				703C2CBD1C8F41320033C405 /* VersionNumberService.swift */,
 				703C2CA61C8F40D10033C405 /* Info.plist */,
 			);
 			path = LaunchCount;
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703C2CBC1C8F41210033C405 /* LaunchCountService.swift in Sources */,
+				703C2CBE1C8F41320033C405 /* VersionNumberService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +318,7 @@
 		703C2CB61C8F40D10033C405 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +329,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = design.bsn.LaunchCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		703C2CB71C8F40D10033C405 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +389,7 @@
 				703C2CB71C8F40D10033C405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		703C2CB81C8F40D10033C405 /* Build configuration list for PBXNativeTarget "LaunchCountTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +398,7 @@
 				703C2CBA1C8F40D10033C405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
