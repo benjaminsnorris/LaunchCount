@@ -1,10 +1,9 @@
-//
-//  LaunchCount.h
-//  LaunchCount
-//
-//  Created by Ben Norris on 3/8/16.
-//  Copyright © 2016 BSN Design. All rights reserved.
-//
+/*
+ |  _   ____   ____   _
+ | ⎛ |‾|  ⚈ |-| ⚈  |‾| ⎞
+ | ⎝ |  ‾‾‾‾| |‾‾‾‾  | ⎠
+ |  ‾        ‾        ‾
+ */
 
 #import <UIKit/UIKit.h>
 
