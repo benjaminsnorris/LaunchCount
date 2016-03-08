@@ -20,4 +20,9 @@ public struct VersionNumberService {
         return NSBundle.mainBundle().infoDictionary?["CFBundleVersion"] as? String
     }
     
+    
+    // MARK: - Initializers
+    
+    public init() { }
+    
 }
