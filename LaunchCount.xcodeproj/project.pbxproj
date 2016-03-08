@@ -26,13 +26,13 @@
 
 /* Begin PBXFileReference section */
 		703C2CA11C8F40D10033C405 /* LaunchCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		703C2CA41C8F40D10033C405 /* LaunchCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchCount.h; sourceTree = "<group>"; };
-		703C2CA61C8F40D10033C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		703C2CA41C8F40D10033C405 /* LaunchCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LaunchCount.h; path = ../Sources/LaunchCount.h; sourceTree = "<group>"; };
+		703C2CA61C8F40D10033C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Sources/Info.plist; sourceTree = "<group>"; };
 		703C2CAB1C8F40D10033C405 /* LaunchCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCountTests.swift; sourceTree = "<group>"; };
 		703C2CB21C8F40D10033C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		703C2CBB1C8F41210033C405 /* LaunchCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchCountService.swift; sourceTree = "<group>"; };
-		703C2CBD1C8F41320033C405 /* VersionNumberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionNumberService.swift; sourceTree = "<group>"; };
+		703C2CBB1C8F41210033C405 /* LaunchCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchCountService.swift; path = ../Sources/LaunchCountService.swift; sourceTree = "<group>"; };
+		703C2CBD1C8F41320033C405 /* VersionNumberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionNumberService.swift; path = ../Sources/VersionNumberService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 		703C2C971C8F40D10033C405 = {
 			isa = PBXGroup;
 			children = (
-				703C2CA31C8F40D10033C405 /* LaunchCount */,
-				703C2CAF1C8F40D10033C405 /* LaunchCountTests */,
+				703C2CA31C8F40D10033C405 /* Sources */,
+				703C2CAF1C8F40D10033C405 /* Tests */,
 				703C2CA21C8F40D10033C405 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,7 +72,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		703C2CA31C8F40D10033C405 /* LaunchCount */ = {
+		703C2CA31C8F40D10033C405 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				703C2CA41C8F40D10033C405 /* LaunchCount.h */,
@@ -80,16 +80,16 @@
 				703C2CBD1C8F41320033C405 /* VersionNumberService.swift */,
 				703C2CA61C8F40D10033C405 /* Info.plist */,
 			);
-			path = LaunchCount;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		703C2CAF1C8F40D10033C405 /* LaunchCountTests */ = {
+		703C2CAF1C8F40D10033C405 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */,
 				703C2CB21C8F40D10033C405 /* Info.plist */,
 			);
-			path = LaunchCountTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
