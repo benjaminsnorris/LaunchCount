@@ -8,7 +8,12 @@ A simple library to provide version number and launch count information for iOS 
 
 1. [Requirements](#requirements)
 2. [Usage](#usage)
+  - [Launch count information](#launch-count-information)
+  - [Version number information](#version-number-information)
 3. [Integration](#integration)
+  - [Carthage](#carthage)
+  - [Swift Package Manager](#swift-package-manager)
+  - [Git Submodules](#git-submodules)
 
 
 ## Requirements
