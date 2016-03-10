@@ -115,7 +115,7 @@ let package = Package(
     name: "YOUR_PACKAGE_NAME",
     targets: [],
     dependencies: [
-        .Package(url: "https://github.com/benjaminsnorris/LaunchCount.git", majorVersion: 0)
+        .Package(url: "https://github.com/benjaminsnorris/LaunchCount.git", majorVersion: 1)
     ]
 )
 ```
