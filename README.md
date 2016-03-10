@@ -6,9 +6,83 @@
 
 A simple library to provide version number and launch count information for iOS apps
 
+1. [Requirements](#requirements)
+2. [Usage](#usage)
+3. [Integration](#intgration)
+
+
 ## Requirements
 - iOS 9.0+
 - Xcode 7
+
+
+## Usage
+Import the module into any file where you want to access launch count or version information.
+```swift
+Import LaunchCount
+```
+
+### Launch count information
+In your AppDelegate, increment the launch count each time the app is launched.
+
+```swift
+import UIKit
+import LaunchCount
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+    var launchCountService = LaunchCountService()
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+      launchCountService.incrementLaunchCountForCurrentVersion()
+      return true
+    }
+
+}
+```
+
+You can also check for first-time launches, either of the app as a whole, or for the current version. This could be used for showing tutorial or "what's new" screens.
+
+```swift
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+      ...
+      if launchCountService.launchCountForAllVersions == 0 {
+          // Perform first time actions, such as showing tutorial screens
+      } else if launchCountService.launchCountForCurrentVersion == 0 {
+          // Possibly show information about the new version
+      }
+      ...
+    }
+```
+
+### Version number information
+
+If you want to display version information in your app, such as on a settings screen, or in a contact email, it is easy.
+
+```swift
+import UIKit
+import LaunchCount
+
+class SettingsTableViewController: UITableViewController {
+    ...
+    var versionNumberService = VersionNumberService()
+
+    override func viewDidLoad() {
+      ...
+      let footerLabel = UILabel()
+      footerLabel.text = versionNumberService.appNameWithVersion
+      footerLabel.sizeToFit()
+      tableView.tableFooterView = footerLabel
+      ...
+    }
+
+    ...
+}
+
+```
+
 
 ## Integration
 ### Carthage
@@ -78,6 +152,3 @@ $ git submodule add https://github.com/benjaminsnorris/LaunchCount.git Vendor/La
 - Select `LaunchCount.framework` nested inside your project.
 - An extra copy of `LaunchCount.framework` will show up in "Linked Frameworks and Libraries". Delete one of them (it doesn't matter which one).
 - And that's it!
-
-
-## Usage
