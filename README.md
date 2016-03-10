@@ -1,5 +1,5 @@
 # LaunchCount
-[![Latest release](http://img.shields.io/github/tag/benjaminsnorris/LaunchCount.svg)](https://github.com/benjaminsnorris/LaunchCount/releases)
+[![Latest release](http://img.shields.io/github/release/benjaminsnorris/LaunchCount.svg)](https://github.com/benjaminsnorris/LaunchCount/releases)
 [![GitHub license](https://img.shields.io/github/license/benjaminsnorris/LaunchCount.svg)](/LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg)](https://swift.org/package-manager)
