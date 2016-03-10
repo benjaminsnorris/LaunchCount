@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		703C2CA51C8F40D10033C405 /* LaunchCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 703C2CA41C8F40D10033C405 /* LaunchCount.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		703C2CAC1C8F40D10033C405 /* LaunchCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703C2CA11C8F40D10033C405 /* LaunchCount.framework */; };
 		703C2CB11C8F40D10033C405 /* LaunchCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */; };
 		703C2CBC1C8F41210033C405 /* LaunchCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CBB1C8F41210033C405 /* LaunchCountService.swift */; };
@@ -26,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		703C2CA11C8F40D10033C405 /* LaunchCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		703C2CA41C8F40D10033C405 /* LaunchCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LaunchCount.h; path = ../SupportingFiles/LaunchCount.h; sourceTree = "<group>"; };
 		703C2CA61C8F40D10033C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../SupportingFiles/Info.plist; sourceTree = "<group>"; };
 		703C2CAB1C8F40D10033C405 /* LaunchCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCountTests.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 		703C2CA31C8F40D10033C405 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				703C2CA41C8F40D10033C405 /* LaunchCount.h */,
 				703C2CBB1C8F41210033C405 /* LaunchCountService.swift */,
 				703C2CBD1C8F41320033C405 /* VersionNumberService.swift */,
 				703C2CA61C8F40D10033C405 /* Info.plist */,
@@ -101,7 +98,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				703C2CA51C8F40D10033C405 /* LaunchCount.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
