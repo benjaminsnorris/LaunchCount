@@ -8,7 +8,7 @@ A simple library to provide version number and launch count information for iOS 
 
 1. [Requirements](#requirements)
 2. [Usage](#usage)
-3. [Integration](#intgration)
+3. [Integration](#integration)
 
 
 ## Requirements
