@@ -104,7 +104,7 @@ $ brew install carthage
 To integrate LaunchCount into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "benjaminsnorris/LaunchCount"
+github "benjaminsnorris/LaunchCount" ~> 1.0
 ```
 
 Run `carthage update` to build the framework and drag the built `LaunchCount.framework` into your Xcode project.
