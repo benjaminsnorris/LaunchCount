@@ -4,12 +4,11 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg)](https://swift.org/package-manager)
 
-A simple library to provide version number and launch count information for iOS apps
+A simple library to provide launch count information for iOS apps. LaunchCount comes together with [VersionNumber](https://github.com/benjaminsnorris/VersionNumber), which you can use to get version number information. The launch count information is collected for each version, so you can make better decisions in your app.
 
 1. [Requirements](#requirements)
 2. [Usage](#usage)
   - [Launch count information](#launch-count-information)
-  - [Version number information](#version-number-information)
 3. [Integration](#integration)
   - [Carthage](#carthage)
   - [Swift Package Manager](#swift-package-manager)
@@ -22,7 +21,7 @@ A simple library to provide version number and launch count information for iOS 
 
 
 ## Usage
-Import the module into any file where you want to access launch count or version information.
+Import the module into any file where you want to access launch count information.
 ```swift
 Import LaunchCount
 ```
@@ -62,32 +61,6 @@ You can also check for first-time launches, either of the app as a whole, or for
     }
 ```
 
-### Version number information
-
-If you want to display version information in your app, such as on a settings screen, or in a contact email, it is easy.
-
-```swift
-import UIKit
-import LaunchCount
-
-class SettingsTableViewController: UITableViewController {
-    ...
-    var versionNumberService = VersionNumberService()
-
-    override func viewDidLoad() {
-      ...
-      let footerLabel = UILabel()
-      footerLabel.text = versionNumberService.appNameWithVersion
-      footerLabel.sizeToFit()
-      tableView.tableFooterView = footerLabel
-      ...
-    }
-
-    ...
-}
-
-```
-
 
 ## Integration
 ### Carthage
@@ -104,7 +77,7 @@ $ brew install carthage
 To integrate LaunchCount into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "benjaminsnorris/LaunchCount" ~> 1.0
+github "benjaminsnorris/LaunchCount" ~> 1.1
 ```
 
 Run `carthage update` to build the framework and drag the built `LaunchCount.framework` into your Xcode project.
