@@ -10,7 +10,6 @@
 		703C2CAC1C8F40D10033C405 /* LaunchCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703C2CA11C8F40D10033C405 /* LaunchCount.framework */; };
 		703C2CB11C8F40D10033C405 /* LaunchCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */; };
 		703C2CBC1C8F41210033C405 /* LaunchCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CBB1C8F41210033C405 /* LaunchCountService.swift */; };
-		703C2CBE1C8F41320033C405 /* VersionNumberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C2CBD1C8F41320033C405 /* VersionNumberService.swift */; };
 		709C3E0F1CA5AB7D0058CCE8 /* VersionNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709C3E0E1CA5AB7D0058CCE8 /* VersionNumber.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +30,8 @@
 		703C2CB01C8F40D10033C405 /* LaunchCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCountTests.swift; sourceTree = "<group>"; };
 		703C2CB21C8F40D10033C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../SupportingFiles/LaunchCountTests/Info.plist; sourceTree = "<group>"; };
 		703C2CBB1C8F41210033C405 /* LaunchCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchCountService.swift; path = ../Sources/LaunchCountService.swift; sourceTree = "<group>"; };
-		703C2CBD1C8F41320033C405 /* VersionNumberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VersionNumberService.swift; path = ../Sources/VersionNumberService.swift; sourceTree = "<group>"; };
 		703C2CC31C8F7CF20033C405 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		709C3E0E1CA5AB7D0058CCE8 /* VersionNumber.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VersionNumber.framework; path = VersionNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709C3E0E1CA5AB7D0058CCE8 /* VersionNumber.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VersionNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				703C2CBB1C8F41210033C405 /* LaunchCountService.swift */,
-				703C2CBD1C8F41320033C405 /* VersionNumberService.swift */,
 				703C2CA61C8F40D10033C405 /* Info.plist */,
 				709C3E101CA5ABA00058CCE8 /* Frameworks */,
 			);
@@ -212,7 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				703C2CBC1C8F41210033C405 /* LaunchCountService.swift in Sources */,
-				703C2CBE1C8F41320033C405 /* VersionNumberService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
