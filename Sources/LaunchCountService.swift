@@ -13,7 +13,7 @@ public struct LaunchCountService {
     // MARK: - Public properties
     
     public var launchCountForCurrentVersion: Int {
-        return launchCount(versionNumberService.currentVersionShort)
+        return launchCount(versionNumberService.versionNumber)
     }
     
     public var launchCountForAllVersions: Int {
@@ -46,7 +46,7 @@ public struct LaunchCountService {
     // MARK: - Public functions
     
     public func incrementLaunchCountForCurrentVersion() -> Bool {
-        return incrementLaunchCount(versionNumberService.currentVersionShort)
+        return incrementLaunchCount(versionNumberService.versionNumber)
     }
 
 }
