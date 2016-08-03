@@ -162,6 +162,7 @@
 				TargetAttributes = {
 					703C2CA01C8F40D10033C405 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					703C2CAA1C8F40D10033C405 = {
 						CreatedOnToolsVersion = 7.3;
@@ -340,6 +341,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -360,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = design.bsn.LaunchCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
